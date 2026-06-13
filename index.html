@@ -18,14 +18,13 @@
     .card h3 { font-size: 1.2em; margin-bottom: 8px; color: #0f3460; }
     .card p { color: #495057; margin-bottom: 12px; }
     .tag { display: inline-block; background: #e9ecef; color: #495057; padding: 4px 12px; border-radius: 20px; font-size: 0.85em; margin: 2px 4px 2px 0; }
-    .links { margin-top: 12px; }
-    .links a { color: #0f3460; text-decoration: none; font-weight: 500; margin-right: 16px; }
-    .links a:hover { text-decoration: underline; }
-    .dashboard-preview { margin-bottom: 48px; }
-    .dashboard-placeholder { background: linear-gradient(135deg, #16213e, #0f3460); border-radius: 12px; padding: 60px 40px; text-align: center; color: white; }
-    .dashboard-placeholder h3 { font-size: 1.8em; margin-bottom: 12px; color: white; }
-    .dashboard-placeholder .btn { display: inline-block; background: #e94560; color: white; padding: 12px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; margin-top: 16px; }
-    .dashboard-placeholder .btn:hover { background: #d63851; }
+    .btn { display: inline-block; background: #0f3460; color: white; padding: 8px 20px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 0.9em; margin-top: 8px; }
+    .btn:hover { background: #16213e; }
+    .btn-dashboard { background: #e94560; }
+    .btn-dashboard:hover { background: #d63851; }
+    .dashboard-section { margin-bottom: 48px; }
+    .dashboard-box { background: linear-gradient(135deg, #16213e, #0f3460); border-radius: 12px; padding: 40px; text-align: center; color: white; }
+    .dashboard-box h3 { font-size: 1.5em; margin-bottom: 8px; color: white; }
     footer { text-align: center; color: #6c757d; font-size: 0.9em; padding-top: 32px; border-top: 1px solid #dee2e6; }
   </style>
 </head>
@@ -41,47 +40,51 @@
     <div class="projects">
       <div class="card">
         <h3>Customer Segmentation</h3>
-        <p>RFM analysis on 200 customers. Identified 5 segments: Champions, Loyal, Potential Loyalists, At Risk, Lost. Found that 8.5% of customers drive 28% of revenue.</p>
+        <p>RFM analysis on 200 customers. Identified 5 segments: Champions, Loyal, Potential Loyalists, At Risk, Lost. 8.5% of customers drive 28% of revenue.</p>
         <span class="tag">Python</span>
         <span class="tag">Pandas</span>
         <span class="tag">Matplotlib</span>
-        <div class="links">
-          <a href="1_customer_segmentation.py">View Script</a>
-          <a href="1_customer_segments.png">View Chart</a>
-        </div>
+        <br>
+        <a class="btn" href="https://github.com/harshvardhankulkarni/customer-segmentation" target="_blank">View Repo</a>
       </div>
 
       <div class="card">
         <h3>Sales Trend Analysis</h3>
-        <p>180 days of sales data. Rolling averages, day-of-week patterns, month-over-month comparison. Total revenue: Rs.12.1M. Peak day: Wednesday.</p>
+        <p>180 days of sales data. Rolling averages, day-of-week patterns, month-over-month comparison. Total revenue: Rs.12.1M.</p>
         <span class="tag">Python</span>
         <span class="tag">NumPy</span>
         <span class="tag">Data Visualization</span>
-        <div class="links">
-          <a href="2_sales_trend_analysis.py">View Script</a>
-          <a href="2_sales_trend_analysis.png">View Chart</a>
-        </div>
+        <br>
+        <a class="btn" href="https://github.com/harshvardhankulkarni/sales-trend-analysis" target="_blank">View Repo</a>
       </div>
 
       <div class="card">
         <h3>Data Cleaning Automation</h3>
-        <p>End-to-end pipeline on a deliberately dirty CRM export. Fixed 31 issues: duplicates, bad emails, invalid dates, negative spend, inconsistent cities, non-standard flags.</p>
+        <p>End-to-end pipeline on a deliberately dirty CRM export. Fixed 31 issues: duplicates, bad emails, invalid dates, negative spend, inconsistent cities.</p>
         <span class="tag">Python</span>
         <span class="tag">Data Quality</span>
         <span class="tag">Automation</span>
-        <div class="links">
-          <a href="3_data_cleaning_automation.py">View Script</a>
-          <a href="3_data_cleaning_report.png">View Report</a>
-        </div>
+        <br>
+        <a class="btn" href="https://github.com/harshvardhankulkarni/data-cleaning-automation" target="_blank">View Repo</a>
+      </div>
+
+      <div class="card">
+        <h3>Sales Dashboard</h3>
+        <p>Interactive Streamlit dashboard. KPI cards, Plotly trend charts, day-of-week analysis, monthly comparison, CSV export.</p>
+        <span class="tag">Streamlit</span>
+        <span class="tag">Plotly</span>
+        <span class="tag">Python</span>
+        <br>
+        <a class="btn" href="https://github.com/harshvardhankulkarni/sales-dashboard" target="_blank">View Repo</a>
       </div>
     </div>
 
-    <div class="dashboard-preview">
+    <div class="dashboard-section">
       <h2>Live Dashboard</h2>
-      <div class="dashboard-placeholder">
+      <div class="dashboard-box">
         <h3>Sales Analytics Dashboard</h3>
-        <p>Interactive Streamlit dashboard with KPI cards, trend charts, and raw data export.</p>
-        <a class="btn" href="https://harsh-data-analytics-portfolio.streamlit.app" target="_blank">Launch Dashboard</a>
+        <p>Monitor daily sales, trends, and performance metrics in real time.</p>
+        <a class="btn btn-dashboard" href="https://harsh-data-analytics-portfolio.streamlit.app" target="_blank">Launch Dashboard</a>
       </div>
     </div>
 

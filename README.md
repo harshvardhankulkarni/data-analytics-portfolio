@@ -1,43 +1,20 @@
 # Data Analytics Portfolio
 
-Python data analysis portfolio showcasing customer segmentation, sales trend analysis, and data cleaning automation.
+Python data analysis portfolio. Each project has its own repository with full documentation.
 
 ## Projects
 
-### 1. Customer Segmentation (RFM Analysis)
-Segments customers into Champions, Loyal Customers, Potential Loyalists, At Risk, and Lost using Recency, Frequency, Monetary scoring. Identifies top revenue drivers and retention targets.
+| Project | Description | Repo |
+|---------|-------------|------|
+| Customer Segmentation | RFM analysis. Segments customers into Champions, Loyal, At Risk, Lost. | [github.com/harshvardhankulkarni/customer-segmentation](https://github.com/harshvardhankulkarni/customer-segmentation) |
+| Sales Trend Analysis | 180-day time series. Rolling averages, day-of-week patterns, month-over-month. | [github.com/harshvardhankulkarni/sales-trend-analysis](https://github.com/harshvardhankulkarni/sales-trend-analysis) |
+| Data Cleaning Automation | End-to-end pipeline. Fixes duplicates, bad emails, invalid dates, negative values. | [github.com/harshvardhankulkarni/data-cleaning-automation](https://github.com/harshvardhankulkarni/data-cleaning-automation) |
+| Sales Dashboard | Interactive Streamlit dashboard with KPI cards and Plotly charts. | [github.com/harshvardhankulkarni/sales-dashboard](https://github.com/harshvardhankulkarni/sales-dashboard) |
 
-**Output:** `1_customer_segmentation.py` + `1_customer_segments.png`
+## Live Dashboard
 
-### 2. Sales Trend Analysis
-Analyzes 180 days of sales data with rolling averages, day-of-week patterns, and month-over-month comparison. Identifies peak days and low-performing periods.
+[https://harsh-data-analytics-portfolio.streamlit.app](https://harsh-data-analytics-portfolio.streamlit.app)
 
-**Output:** `2_sales_trend_analysis.py` + `2_sales_trend_analysis.png`
+## About
 
-### 3. Data Cleaning Automation
-End-to-end data cleaning pipeline. Fixes duplicates, invalid emails, inconsistent city names, bad dates, negative values, and non-standardized flags.
-
-**Output:** `3_data_cleaning_automation.py` + `3_data_cleaning_report.png`
-
-### 4. Interactive Dashboard
-Streamlit dashboard with KPI cards, Plotly charts, and raw data export. Deployed on Streamlit Cloud.
-
-**Output:** `dashboard.py`
-
-## How to Run
-
-```bash
-pip install pandas matplotlib seaborn numpy streamlit plotly
-python 1_customer_segmentation.py
-python 2_sales_trend_analysis.py
-python 3_data_cleaning_automation.py
-streamlit run dashboard.py
-```
-
-## Tech Stack
-
-Python, Pandas, NumPy, Matplotlib, Seaborn, Plotly, Streamlit
-
-## About Me
-
-Data analyst with expertise in Python, SQL, and business intelligence. I help small businesses find hidden revenue in their data.
+Harshvardhan Kulkarni. Data analyst. Python, SQL, business intelligence. Pune, India.
