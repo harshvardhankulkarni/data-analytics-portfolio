@@ -1,25 +1,83 @@
-# Data Analytics Portfolio (Demo Projects)
+<!-- GSD -->
 
-Python data analysis portfolio. Each project has its own repository with full documentation.
+# Data Analytics Portfolio
 
-All projects are demo projects built with synthetic or publicly available data. They demonstrate analysis techniques, code quality, and data storytelling.
+Central landing page for Harshvardhan Kulkarni's data analytics projects. Showcases Python-based analysis work through a GitHub Pages site, an interactive Streamlit dashboard, and standalone analysis scripts.
 
-## Projects
+## What's Included
 
-| Project | Description | Repo |
-|---------|-------------|------|
-| Customer Segmentation | RFM analysis. Segments customers into Champions, Loyal, At Risk, Lost. | [customer-segmentation](https://github.com/harshvardhankulkarni/customer-segmentation) |
-| Sales Trend Analysis | 180-day time series. Rolling averages, day-of-week patterns, month-over-month. | [sales-trend-analysis](https://github.com/harshvardhankulkarni/sales-trend-analysis) |
-| Data Cleaning Automation | End-to-end pipeline. Fixes duplicates, bad emails, invalid dates, negative values. | [data-cleaning-automation](https://github.com/harshvardhankulkarni/data-cleaning-automation) |
-| Sales Dashboard | Interactive Streamlit dashboard with KPI cards and Plotly charts. | [sales-dashboard](https://github.com/harshvardhankulkarni/sales-dashboard) |
-| Social Media Usage Analysis | Platform usage patterns, engagement trends, demographic breakdown. | [social-media-usage-analysis](https://github.com/harshvardhankulkarni/social-media-usage-analysis) |
-| AI Model Comparison | Compare LLMs on benchmarks, cost, speed, and context window. | [ai-model-comparison](https://github.com/harshvardhankulkarni/ai-model-comparison) |
-| AI Solution Recommender | Recommends the best AI model for a given business use case, budget, and technical level. | [ai-solution-recommender](https://github.com/harshvardhankulkarni/ai-solution-recommender) |
+- **GitHub Pages site** (`index.html`) — dark-themed portfolio with 8 project cards linking to individual repos and live pages
+- **Streamlit dashboard** (`dashboard.py`) — interactive sales analytics with KPI cards, Plotly charts, day-of-week and monthly breakdowns
+- **3 analysis scripts** — customer segmentation (RFM), sales trend analysis (time series), data cleaning automation (pipeline)
+- **Sample dataset** (`sample_data.csv`) — synthetic e-commerce orders for demonstrations
+- **Output files** — `customer_segments_output.csv`, `sales_trend_output.csv`, `cleaned_data_output.csv` from each script
 
-## Live Dashboard
+## Features
 
-[https://harsh-data-analytics-portfolio.streamlit.app](https://harsh-data-analytics-portfolio.streamlit.app)
+- Interactive dashboard deployed on Streamlit Cloud
+- Static portfolio site hosted on GitHub Pages
+- Self-contained analysis scripts that generate synthetic data (no external data sources needed)
+- End-to-end data cleaning pipeline demonstrating 10-step data quality workflow
+- RFM-based customer segmentation with visual segment analysis
+- Sales trend decomposition with rolling averages and day-of-week patterns
 
-## About
+## Tech Stack
 
-Harshvardhan Kulkarni. Data analyst. Python, SQL, business intelligence. Pune, India.
+| Layer | Technology |
+|-------|-----------|
+| Language | Python 3.11+ |
+| Data | Pandas 2.2.0, NumPy 1.26.3 |
+| Visualization | Matplotlib 3.8.3, Seaborn 0.13.2, Plotly 5.18.0 |
+| Dashboard | Streamlit 1.31.0 |
+| Hosting (static) | GitHub Pages |
+| Hosting (dashboard) | Streamlit Cloud |
+| Dev environment | Dev Container (VS Code / GitHub Codespaces) |
+
+## Quick Start
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the dashboard
+streamlit run dashboard.py
+
+# Run individual analysis scripts
+python 1_customer_segmentation.py
+python 2_sales_trend_analysis.py
+python 3_data_cleaning_automation.py
+```
+
+## Project Structure
+
+```
+portfolio/
+  index.html                          # GitHub Pages landing page
+  dashboard.py                        # Streamlit dashboard
+  requirements.txt                    # Python dependencies
+  sample_data.csv                     # Synthetic e-commerce dataset
+  1_customer_segmentation.py          # RFM analysis
+  2_sales_trend_analysis.py           # Time series analysis
+  3_data_cleaning_automation.py       # Data cleaning pipeline
+  GITHUB_DEPLOY_GUIDE.md              # Deployment instructions
+  README.md                           # This file
+  docs/
+    ARCHITECTURE.md                   # Architecture and design decisions
+    GETTING-STARTED.md                # Setup and usage guide
+    DEVELOPMENT.md                    # Development workflow
+    TESTING.md                        # Testing and validation
+    CONFIGURATION.md                  # Configuration reference
+  .devcontainer/
+    devcontainer.json                 # Dev container config
+    README.md                         # Dev container instructions
+```
+
+## Live Links
+
+- **GitHub Pages site:** https://harshvardhankulkarni.github.io/data-analytics-portfolio/
+- **Streamlit dashboard:** https://harsh-data-analytics-portfolio.streamlit.app
+- **GitHub repository:** https://github.com/harshvardhankulkarni/data-analytics-portfolio
+
+## Demo Note
+
+All projects in this portfolio are **demo projects** built with synthetic datasets. They demonstrate analysis techniques, code quality, and data storytelling. Each project has its own standalone repository with full documentation (README, architecture docs, runbook).
